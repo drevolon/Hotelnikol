@@ -11,25 +11,16 @@ namespace hotelnikol
 {
 
 
-    public partial class _Default
+    public partial class booking
     {
 
         /// <summary>
-        /// QueryClients элемент управления.
+        /// form1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::hotelnikol.UC.QueryClients QueryClients;
-
-        /// <summary>
-        /// slider4 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::hotelnikol.UC.slider4 slider4;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }
