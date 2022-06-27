@@ -1,13 +1,35 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('../fontawesome/css/all.css');
+
+
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../fonts/roboto-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto-black';
+    src: url('../fonts/roboto-black.ttf') format('truetype');
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');*/
+
+* {
+    font-family: Roboto-Regular,Arial,Verdana;
+}
+
 
 body {
     padding-bottom: 20px;
     font-family: Roboto-Regular,Arial,Verdana;
-    background: url('../Images/backPrezent5.png') no-repeat;
+    background: url('../Images/backPrezent6.png') no-repeat;
     background-position: center top;
     background-position: 0px -174px;
 }
@@ -27,31 +49,44 @@ textarea {
     max-width: 280px;
 }
 
+.banner_nicol {
+    position: absolute;
+    top: 90px;
+    z-index: 1000;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+    .banner_nicol .navbar-nav .nav-item {
+        padding-right: 25px;
+    }
+
+
 
 
 
 header {
-    height: 20px;
-    margin:auto;
-   
+    position: relative;
 }
 
     header .bg-light {
-        background-color: #0077DC !important;
+        background-color: #D65479 !important;
     }
 
     header .navbar-light .navbar-nav a.nav-link {
-        color: rgba(255, 255, 255, 1);
-        font-style: normal;
-        font-weight: normal;
+        font-family: roboto-black;
         font-size: 24px;
-        text-decoration:none;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        text-decoration: none;
     }
 
     header .navbar-brand {
-
-        padding-top:15px;
-        padding-bottom:15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         color: rgba(255, 255, 255, 1) !important;
         font-style: normal;
         font-weight: normal;
@@ -64,377 +99,126 @@ header {
 }
 
 .present {
-    margin-top: 116px;
+    margin-top: 0px;
     display: flex;
-    
 }
+
     .present .present_img {
-        
-        width: 490px;
-        height: 589px;
     }
 
     .present h1 {
-        
-        font-style: normal;
-        font-weight: bold;
-        font-size: 400%;
-        line-height: 56px;
     }
 
-    .present .present_block
-    {
-        padding:0px 0px 0px 100px;
+    .present .present_block {
+        position: absolute;
+        width: 795px;
+        height: 427px;
+        right: 112px;
+        top: 266px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background: rgba(242, 238, 233, 0.8);
+        border-radius: 42px;
+        padding: 53px;
+        z-index: 1000;
     }
+
+        .present .present_block .header {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #000000;
+        }
+
+        .present .present_block .base_text {
+            margin-top: 38px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            color: #000000;
+        }
+
+    .present .slider {
+        z-index: 0;
+    }
+
     .present .present_header {
-         text-wrap:none !important;
-         
     }
+
     .present .present_text {
-        margin-top: 70px;
-      
-        font-style: normal;
-        font-weight: normal;
-        font-size: 290%;
-        line-height: 42px;
-        color: #000000;
     }
 
-    .what_commit {
-        margin-top: 80px;
-    }
-        .what_commit .what_commit_header {
-            font-size: 400%;
-            font-weight: bold;
-            margin-bottom: 52px;
-        }
-    .what_commit .header h2 {
-        text-align: center;
-        font-weight: bold;
-    }
-    .what_commit .text {
-        width: 234px;
-        height: 162px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 50px;
-        text-align: right;
-        letter-spacing: 0.44px;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.87);
-    }
-    .what_commit .what_commit_block {
-        
-        width: 445.87px;
-        height: 209px;
-      
-        background: #0077DC;
-        border: 1px solid #0C8B8B;
-        box-sizing: border-box;
-        border-radius: 20px;
-    }
-        .what_commit .card {
-            background: #0077DC;
-            border: 1px solid #0C8B8B;
-            box-sizing: border-box;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 36px;
-            color:white;
-            height:186px;
-        }
-        .what_commit .card-text {
-            font-size: 29px;
-        }
-        .what_commit .icon {
-            font-size: 280%;
-        }
-
-
-.take_services1 {
-    display: flex;
-    margin-top: 80px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    background-color: #D4D4D4;
+.reserved_room {
+    height: 330px;
+    
+    background: #73707C;
 }
-    .take_services1 .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-       
-    }
-    .take_services1 .take_services1_block {
-        
-        text-align: center;
-        font-style: normal;
-        font-weight: bold;
-        
-    }
-        .take_services1 .take_services1_block .take_services1_header {
-            font-size: 400%;
-            font-weight: bold;
-        }
-        .take_services1 .take_services1_block .take_services1_text {
-            margin-top: 48px;
-            font-size: 300%;
-            justify-content: space-between;
-        }
-
-   
-
-
-.portfolio {
-    margin-top: 80px;
-}
-
-    .portfolio .portfolio_header {
-        font-size: 400%;
-        font-weight: bold;
-        margin-bottom: 52px;
-    }
-
-    .portfolio .card-header {
-        padding: .5rem 1rem;
-        margin-bottom: 0;
-        background-color: #fff;
-        border-bottom: 0px solid #fff;
-    }
-
-    .portfolio .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 0px solid rgba(0,0,0,.125);
-        border-radius: .25rem;
-    }
-
-
-
-.my_job {
-    margin-top: 80px;
-}
-
-    .my_job .my_job_header {
-        font-size: 400%;
-        font-weight: bold;
-        margin-bottom: 52px;
-    }
-
-    .my_job .card-header {
-        padding: .5rem 1rem;
-        margin-bottom: 0;
-        background-color: #fff;
-        border-bottom: 0px solid #fff;
-    }
-    .my_job .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 0px solid rgba(0,0,0,.125);
-        border-radius: .25rem;
-    }
-    .my_job .list{
-        line-height:30px;
-        list-style:none;
-        
-    }
-        .my_job .list .list_item {
-            padding-bottom: 10px;
-        }
-
-.take_services2 {
-    margin-top: 80px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    display:flex;
-}
-
-    .take_services2 .container-fluid {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .take_services2 .take_services2_header {
-        font-size: 400%;
-        font-weight: bold;
-        
-    }
-
-    .take_services2 .take_services2_block {
-       
-        background-color: #4F4F4F;
-        padding-top:50px;
-        padding-bottom:50px;
-    }
-    .take_services2 .form-control-lg {
-        padding: 3.0rem 1rem;
-        
-        font-size: 2.3rem;
-        border-radius: 1.3rem;
-    }
-
-    .take_services2 .btn-group-lg > .btn, .btn-lg {
-        padding: 1.2rem 0rem;
-        font-size: 2rem;
-        border-radius: 1.3rem;
-        text-align:center;
-        width:400px;
-    }
-
-.my_clients {
-    margin-top: 80px;
-}
-    .my_clients .my_clients_header {
-        font-size: 400%;
-        font-weight: bold;
-        margin-bottom: 52px;
-    }
-    .my_clients .items_slider
+    .reserved_room .input-data
     {
-        list-style:none;
+        width:1200px;
     }
-        .my_clients .items_slider .item_slider, .my_clients .card-title {
-            font-size: 2rem;
-        }
-    footer {
-        margin-top: 80px;
-        height: 122px;
-        background-color: #0077DC;
-        padding: 15px 5px;
+    .reserved_room h3 {
+        margin-top: 33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 24px;
+        color: #F2EEE9;
     }
+
+    .reserved_room .mt-my1
+    {
+        margin-top:33px;
+    }
+    .reserved_room .mt-my2{
+        margin-top: 33px;
+    }
+    .reserved_room label {
+       
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .reserved_room .txtb {
+        margin-right: 73px;
+    }
+    .reserved_room .btnm {
+        box-sizing: border-box;
+        background: #D65479;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        font-size:24px;
+        padding:5px 90px;
+
+    }
+
+footer {
+    margin-top: 80px;
+    height: 122px;
+    background-color: #0077DC;
+    padding: 15px 5px;
+}
+
     footer .social {
         float: right;
     }
 
 
 @media only screen and (max-width: 1400px) {
-    .present {
-    }
-
-        .present .present_header {
-            font-size: 100%;
-        }
-
-        .present .present_text {
-            font-size: 250%;
-        }
-
-        .present .present_img {
-        }
-
-    .what_commit .icon {
-        font-size: 200%;
-    }
-
-    .what_commit .card-text {
-        font-size: 20px;
-    }
-
-    .what_commit .card {
-        height: 120px;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
-    .present {
-        margin-top: 120px;
-    }
-
-        .present .present_header {
-            font-size: 80%;
-        }
-
-        .present .present_text {
-            font-size: 200%;
-            margin-top: 10px;
-        }
-
-    .what_commit .icon {
-        font-size: 200%;
-    }
-    .what_commit .card-text {
-        font-size: 20px;
-    }
-    .what_commit .card {
-       
-        height: 120px;
-    }
-
-    .show {
-        display: block !important;
-    }
 }
 
 @media only screen and (max-width: 900px) {
-    .present {
-        margin-top: 100px;
-        z-index:-1000;
-    }
-        .present .present_header {
-            font-size: 80%;
-        }
-        .present .present_text {
-            font-size: 200%;
-            margin-top: 10px;
-        }
-        .present .present_img {
-        }
-    .show {
-        display: block !important;
-    }
-    .collapse:not(.show) {
-        display: none;
-    }
 }
 /*Small*/
 @media only screen and (max-width: 767px) {
-    .present {
-        
-        background:none;
-    }
-        .present .present_block {
-            margin-left: 0px;
-            margin-top: 50px;
-            padding: 0px 0px 0px 0px;
-        }
-        .present .present_header {
-            text-wrap:normal;
-            width: 100%;
-        }
-        .present .present_text {
-            margin-top: 70px;
-            width: 100%;
-            height: 100%;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 290%;
-            line-height: 42px;
-            color: #000000;
-        }
-        .present .present_img {
-            width: 100%;
-            height: 100%;
-        }
-    .take_services2 .btn-group-lg > .btn, .btn-lg {
-        padding: 1.4rem 8rem;
-        font-size: 2rem;
-        border-radius: 1.3rem;
-        text-align: center;
-        width: 400px;
-        margin:auto;
-    }
-    .what_commit .icon {
-        display:none;
-    }
 }

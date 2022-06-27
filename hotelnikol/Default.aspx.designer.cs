@@ -13,23 +13,5 @@ namespace hotelnikol
 
     public partial class _Default
     {
-
-        /// <summary>
-        /// QueryClients элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::hotelnikol.UC.QueryClients QueryClients;
-
-        /// <summary>
-        /// slider4 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::hotelnikol.UC.slider4 slider4;
     }
 }
