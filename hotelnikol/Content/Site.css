@@ -34,7 +34,15 @@ body {
     background-position: 0px -174px;
 }
 
-
+h3 {
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 24px;
+    color: #F2EEE9;
+}
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
@@ -198,6 +206,53 @@ header {
         padding:5px 90px;
 
     }
+.block4 {
+    margin-top: 48px;
+}
+    .block4 h3 {
+        margin-top: 33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 24px;
+        color: #000;
+    }
+    .block4 .carousel
+    {
+        margin-top:48px;
+    }
+    footer {
+        margin-top: 80px;
+        height: 122px;
+        background-color: #0077DC;
+        padding: 15px 5px;
+    }
+
+    footer .social {
+        float: right;
+    }
+
+.block5 {
+    margin-top: 48px;
+}
+
+    .block5 h3 {
+        margin-top: 33px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 24px;
+        color: #000;
+    }
+
+    .block5 .carousel {
+        margin-top: 48px;
+    }
+    .block5 img {
+        height: 491px;
+    }
 
 footer {
     margin-top: 80px;
@@ -209,7 +264,6 @@ footer {
     footer .social {
         float: right;
     }
-
 
 @media only screen and (max-width: 1400px) {
 }
