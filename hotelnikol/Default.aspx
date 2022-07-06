@@ -31,7 +31,58 @@
                 <div class="slider col-12">
 
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-                    <img src="Images/Slider/slider0.jpg" class="img-responsive" />
+                    <%--<img src="Images/Slider/slider0.jpg" class="img-responsive" />--%>
+                    <%--<img src="Images/Slider/Banner/banner2.jpg" class="img-responsive"  />--%>
+
+                    <div id="sliderBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="Images/Slider/Banner/banner2.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="Images/Slider/Banner/banner3.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="Images/Slider/Banner/banner4.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="Images/Slider/Banner/banner5.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="Images/Slider/Banner/banner1.jpg" class="d-block w-100" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sliderBanner" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sliderBanner" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
 
                 </div>
                 <div class="col-12">
@@ -67,12 +118,11 @@
         <div class="container-fluid">
             <div class="row mt-my1">
                 <div class="col-12 text-center">
-                    <h3>Забронировать номер</h3>
+                    <h3>Обратная связь</h3>
                 </div>
             </div>
-            <div class="row mt-my2">
+           <%-- <div class="row mt-my2">
                 <div class="container-fluid d-flex align-items-center justify-content-center" id="block3">
-                    <%--<img src="Images/temp/temp_reserved_room.jpg" />--%>
                     <div class="row input-data">
                         <div class="col-3">
                             <label>Заезд</label><br />
@@ -99,18 +149,45 @@
                             </div>
                         </div>
                         <div class="col-3">
-                            
                             <div class="mt-5">
                                 <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
                             </div>
-                            
                         </div>
                     </div>
-                   
-
+                </div>
+            </div>  --%>
+            <div class="row mt-my2">
+                <div class="container-fluid d-flex align-items-center justify-content-center" id="block3">
+                    <div class="row input-data">
+                        <div class="col-3">
+                            <label>Имя</label><br />
+                           
+                               
+                                <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
+                            
+                        </div>
+                        <div class="col-3">
+                            <label>Email</label><br />
+                            
+                                   
+                                <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
+                            
+                        </div>
+                        <div class="col-3">
+                            <label>Обращение</label><br />
+                            
+                                <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
+                            
+                        </div>
+                        <div class="col-3">
+                            <div class="mt-5">
+                                <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        
     </section>
 
      <section class="block4">
@@ -331,9 +408,16 @@
 
      <section class="block8">
         <div class="container-fluid">
+            <div class="row mt-my1">
+                        <div class="col-12 text-center mt-5 mb-5">
+                            <h3>Как нас найти</h3>
+                        </div>
+                    </div>
             <div class="row">
                 <div class="block8 text-center" id="block8">
-                    <img src="Images/temp/temp_how_find_us.png" />
+                    <%--<img src="Images/temp/temp_how_find_us.png" />--%>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>

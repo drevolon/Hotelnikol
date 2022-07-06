@@ -160,13 +160,12 @@ header {
     }
 
 .reserved_room {
-    height: 330px;
-    
+    height: 250px;
     background: #73707C;
 }
     .reserved_room .input-data
     {
-        width:1200px;
+       margin-top:40px;
     }
     .reserved_room h3 {
         margin-top: 33px;
@@ -183,7 +182,7 @@ header {
         margin-top:33px;
     }
     .reserved_room .mt-my2{
-        margin-top: 33px;
+        margin-top: 6px;
     }
     .reserved_room label {
        
@@ -253,7 +252,18 @@ header {
     .block5 img {
         height: 491px;
     }
-
+.block8 {
+    margin-top: 48px;
+}
+.block8 h3 {
+    margin-top: 33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 24px;
+    color: #000;
+}
 
 .book_reviews {
     margin-top: 48px;

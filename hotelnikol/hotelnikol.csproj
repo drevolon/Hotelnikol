@@ -2228,6 +2228,11 @@
     <Content Include="Images\backPrezent5.png" />
     <Content Include="Images\backPrezent6.png" />
     <Content Include="Images\DirectorNoPhone.png" />
+    <Content Include="Images\Slider\Banner\banner1.jpg" />
+    <Content Include="Images\Slider\Banner\banner2.jpg" />
+    <Content Include="Images\Slider\Banner\banner3.jpg" />
+    <Content Include="Images\Slider\Banner\banner4.jpg" />
+    <Content Include="Images\Slider\Banner\banner5.jpg" />
     <Content Include="Images\Slider\slider1.jpg" />
     <Content Include="Images\temp\banner_about_hotel.jpg" />
     <Content Include="Images\temp\banner_about_hotel.png" />
