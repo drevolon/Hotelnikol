@@ -159,29 +159,25 @@ header {
     .present .present_text {
     }
 
-.reserved_room {
+.callback {
     height: 250px;
     background: #73707C;
 }
-    .reserved_room .input-data
-    {
-       margin-top:40px;
+    .callback .input-data {
+        margin-top: 26px;
     }
-    .reserved_room h3 {
+    .callback h3 {
         margin-top: 33px;
-       
         color: #F2EEE9;
     }
 
-    .reserved_room .mt-my1
-    {
-        margin-top:33px;
+    .callback .mt-my1 {
+        margin-top: 33px;
     }
-    .reserved_room .mt-my2{
+    .callback .mt-my2 {
         margin-top: 6px;
     }
-    .reserved_room label {
-       
+    .callback label {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -189,17 +185,18 @@ header {
         line-height: 28px;
         color: #FFFFFF;
     }
-    .reserved_room .txtb {
+    .callback .txtb {
         margin-right: 73px;
+        font-size: 24px !important;
+        
     }
-    .reserved_room .btnm {
+    .callback .btnm {
         box-sizing: border-box;
         background: #D65479;
         border: 1px solid #FFFFFF;
         border-radius: 15px;
-        font-size:24px;
-        padding:5px 90px;
-
+        font-size: 24px;
+        padding: 6px 80px;
     }
 .block4 {
     margin-top: 48px;
@@ -245,11 +242,11 @@ header {
     
     background: #73707C;
     margin-top: 48px;
-    padding: 9px 0px 33px 0px;
+    padding: 8px 0px 15px 0px;
 }
     .schedule_event .txtb {
         margin-right: 73px;
-        font-size:24px !important;
+        /*font-size:24px !important;*/
         width:130px !important;
     }
     .schedule_event h3 {

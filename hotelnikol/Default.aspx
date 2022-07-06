@@ -8,7 +8,8 @@
 
 <link href="Content/Site.css" rel="stylesheet" />
      <!-- TEMP Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/bootstrap5/css/bootstrap.min.css" rel="stylesheet" />
+ 
 
     <link href="../PickMeUp-master/css/pickmeup.css" rel="stylesheet" />
     <script type="text/javascript">
@@ -48,10 +49,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="slider col-12">
-
-                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+               
                     <%--<img src="Images/Slider/slider0.jpg" class="img-responsive" />--%>
                     <%--<img src="Images/Slider/Banner/banner2.jpg" class="img-responsive"  />--%>
+
 
                     <div id="sliderBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -141,35 +142,37 @@
                     <h3>Забронировать номер</h3>
                 </div>
             </div>
-            <div class="row mt-my2">
-                <div class="container-fluid d-flex align-items-center justify-content-center" id="schedule_event_container">
-                    <div class="row input-data">
-                        <div class="col-4">
+            <div class="row mt-3 justify-content-md-center">
+                
+                    
+                        <div class="col col-lg-2">
                             <label>Заезд</label><br />
                             <div class="input-group input-group-lg">
                                 <div class="input-group-text">
-                                    <span class="glyphicon glyphicon-calendar" id="icon1"></span>
+                                    <span class="fa fa-calendar" id="icon1"></span>
                                 </div>
                                 <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col col-lg-2">
                             <label>Выезд</label><br />
                             <div class="input-group input-group-lg">
                                 <div class="input-group-text">
-                                    <span class="glyphicon glyphicon-calendar" id="icon2"></span>
+                                    <span class="fa fa-calendar" id="icon2"></span>
                                 </div>
                                 <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
                             </div>
                         </div>
 
-                        <div class="col-4">
-                            <div class="mt-5">
+                        <div class="col col-lg-2 mb-5">
+                            <label> </label><br />
+                          <div class="input-group input-group-lg">
+
                                 <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
                             </div>
                         </div>
-                    </div>
-                </div>
+                   
+                
             </div>
         </div>
     </section>
@@ -303,33 +306,29 @@
        
     </section>
 
-    <section class="reserved_room">
+    <section class="callback">
         <div class="container-fluid">
             <div class="row mt-my1">
                 <div class="col-12 text-center">
                     <h3>Обратная связь</h3>
                 </div>
             </div>
-            <div class="row mt-my2">
-                <div class="container-fluid d-flex align-items-center justify-content-center" id="block3">
-                    <div class="row input-data">
-                        <div class="col-3">
-                            <label>Имя</label><br />
-                            <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
-                        </div>
-                        <div class="col-3">
-                            <label>Email</label><br />
-                            <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
-                        </div>
-                        <div class="col-3">
-                            <label>Обращение</label><br />
-                            <asp:TextBox runat="server" CssClass="form-control" aria-label="Кол-во" aria-describedby="Кол-во" />
-                        </div>
-                        <div class="col-3">
-                            <div class="mt-5">
-                                <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
-                            </div>
-                        </div>
+            <div class="row mt-3 justify-content-md-center ">
+                <div class="col col-2">
+                    <label>Имя</label><br />
+                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                </div>
+                <div class="col col-2">
+                    <label>Email/Phone</label><br />
+                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                </div>
+                <div class="col col-2">
+                    <label>Обращение</label><br />
+                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                </div>
+                <div class="col col-2">
+                    <div class="mt-5">
+                        <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
                     </div>
                 </div>
             </div>
