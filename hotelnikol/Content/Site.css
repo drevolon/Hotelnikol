@@ -29,19 +29,19 @@
 body {
     padding-bottom: 20px;
     font-family: Roboto-Regular,Arial,Verdana;
-    background: url('../Images/backPrezent6.png') no-repeat;
+  /*  background: url('../Images/backPrezent6.png') no-repeat;
     background-position: center top;
-    background-position: 0px -174px;
+    background-position: 0px -174px;*/
+    font-size:14px !important;
 }
 
+
 h3 {
-   
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 24px;
-    color: #F2EEE9;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 24px !important;
 }
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -169,11 +169,7 @@ header {
     }
     .reserved_room h3 {
         margin-top: 33px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 24px;
+       
         color: #F2EEE9;
     }
 
@@ -210,11 +206,7 @@ header {
 }
     .block4 h3 {
         margin-top: 33px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 24px;
+       
         color: #000;
     }
     .block4 .carousel
@@ -232,26 +224,59 @@ header {
         float: right;
     }
 
-.block5 {
+.services {
     margin-top: 48px;
 }
 
-    .block5 h3 {
+    .services h3 {
         margin-top: 33px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 24px;
+       
         color: #000;
     }
 
-    .block5 .carousel {
+    .services .carousel {
         margin-top: 48px;
     }
-    .block5 img {
+    .services img {
         height: 491px;
     }
+
+.schedule_event {
+    
+    background: #73707C;
+    margin-top: 48px;
+    padding: 9px 0px 33px 0px;
+}
+    .schedule_event .txtb {
+        margin-right: 73px;
+        font-size:24px !important;
+        width:130px !important;
+    }
+    .schedule_event h3 {
+        margin-top: 33px;
+        color: #000;
+    }
+    .schedule_event .btnm {
+        box-sizing: border-box;
+        background: #D65479;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        font-size: 24px;
+        padding: 6px 80px;
+    }
+    .schedule_event label {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .schedule_event .input-data {
+        margin-top: 26px;
+    }
+
+
 .block8 {
     margin-top: 48px;
 }
@@ -271,11 +296,6 @@ header {
 
     .book_reviews h3 {
         margin-top: 33px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 24px;
         color: #000;
     }
 
