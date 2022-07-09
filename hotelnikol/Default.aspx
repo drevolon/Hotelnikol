@@ -44,6 +44,9 @@
                 Отель располагает 30 номерами
                 повышенной комфортности.
             </div>
+            <div class="base_link">
+                ПОДРОБНЕЕ
+            </div>
         </div>
 
         <div class="container-fluid">
@@ -116,7 +119,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-12">
                     <!-- start TL search form 2.0 -->
-                    <div id="tl-search-form"></div>
+                    <%--<div id="tl-search-form"></div>
                     <script type="text/javascript">
                         (function (w) {
                             var q = [
@@ -126,7 +129,7 @@
                             var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {}); ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
                             if (!ti.__loader) { ti.__loader = true; var d = w.document, p = d.location.protocol, s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js'; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); }
                         })(window);
-                    </script>
+                    </script>--%>
                 </div>
             </div>
         </div>
@@ -145,26 +148,26 @@
             <div class="row mt-3 justify-content-md-center">
                 
                     
-                        <div class="col col-lg-2">
+                        <div class="col col-lg-3">
                             <label>Заезд</label><br />
                             <div class="input-group input-group-lg">
                                 <div class="input-group-text">
-                                    <span class="fa fa-calendar" id="icon1"></span>
+                                    <span class="fa fa-calendar-days icon" id="icon1"></span>
                                 </div>
                                 <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
                             </div>
                         </div>
-                        <div class="col col-lg-2">
+                        <div class="col col-lg-3">
                             <label>Выезд</label><br />
                             <div class="input-group input-group-lg">
                                 <div class="input-group-text">
-                                    <span class="fa fa-calendar" id="icon2"></span>
+                                    <span class="fa fa-calendar-days icon" id="icon2"></span>
                                 </div>
                                 <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
                             </div>
                         </div>
 
-                        <div class="col col-lg-2 mb-5">
+                        <div class="col col-lg-2 mb-5 align-text-bottom">
                             <label> </label><br />
                           <div class="input-group input-group-lg">
 
@@ -178,20 +181,52 @@
     </section>
     
 
-     <section class="block4">
+     <section class="our_rooms">
         <div class="container-fluid">
-            <div class="row">
-                <div class="block4 text-center" id="block4">
-                    
-                    <img src="Images/temp_our_rooms.jpg" />
-                  <%--  <div class="row mt-my1">
-                        <div class="col-12 text-center">
-                            <h3>Наши номера</h3>
-                        </div>
-                    </div>--%>
-                    
+            <div class="row mt-my1">
+                <div class="col-12 text-center">
+                    <h3>Наши номера</h3>
                 </div>
             </div>
+            <div class="container">
+            <div class="row text-center items">
+                
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <p class="card-text">Эконом</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                         <div class="card" style="width: 18rem;">
+                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <p class="card-text">Эконом</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                         <div class="card" style="width: 18rem;">
+                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <p class="card-text">Эконом</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                         <div class="card" style="width: 18rem;">
+                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <p class="card-text">Эконом</p>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    
+                
+            </div></div>
         </div>
     </section>
 
