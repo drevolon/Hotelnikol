@@ -167,11 +167,12 @@
                             </div>
                         </div>
 
-                        <div class="col col-lg-2 mb-5 align-text-bottom">
+                        <div class="col col-lg-2 align-text-bottom">
                             <label> </label><br />
                           <div class="input-group input-group-lg">
 
-                                <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
+                              <asp:HyperLink id="HyperLinkSendData" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm"></asp:HyperLink>  
+                             
                             </div>
                         </div>
                    
@@ -188,38 +189,42 @@
                     <h3>Наши номера</h3>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
             <div class="row text-center items">
                 
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                <div class="col col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <a href="#">
+                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." /></a>
+                        <div class="card-body">
+                            <a class="card-link" href="#">Эконом</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                         <div class="card">
+                            <a href="#">
+                            <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <p class="card-text">Эконом</p>
+                                <a class="card-link" href="#">Стандарт</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                         <div class="card" style="width: 18rem;">
-                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                         <div class="card">
+                            <a href="#">
+                            <img src="Images/our_room_img3.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <p class="card-text">Эконом</p>
+                                <a class="card-link" href="#">Люкс</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                         <div class="card" style="width: 18rem;">
-                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                         <div class="card">
+                            <a href="#">
+                            <img src="Images/our_room_img4.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <p class="card-text">Эконом</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                         <div class="card" style="width: 18rem;">
-                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <p class="card-text">Эконом</p>
+                                <a class="card-link" href="#">Премиум</a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +246,30 @@
                             <h3>Услуги</h3>
                         </div>
                     </div>
-                    <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="row items">
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a class="card-link" href="services.aspx">Корпоративы,  свадьбы, вечеринки</a>
+                                </div>
+                                <a href="#">
+                                    <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." /></a>
+                              
+                            </div>
+                        </div>
+                         <div class="col-lg-6 d-flex justify-content-center">
+                            <div class="card var2">
+                                <div class="card-body">
+                                    <a class="card-link" href="services.aspx">Совещения, встречи, презентации</a>
+                                </div>
+                                <a href="#">
+                                    <img src="Images/imgServices2.png" class="card-img-bottom" alt="..." /></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <%--<div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -333,7 +361,7 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                    </div>
+                    </div>--%>
                 </div>
 
                 </div>
@@ -348,25 +376,38 @@
                     <h3>Обратная связь</h3>
                 </div>
             </div>
-            <div class="row mt-3 justify-content-md-center ">
-                <div class="col col-2">
-                    <label>Имя</label><br />
-                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+            <div class="container items">
+                <div class="row justify-content-md-center ">
+                    <div class="col col-lg-3">
+                        <label>Имя</label><br />
+                        <asp:TextBox runat="server" CssClass="form-control form-control-lg txtb"  />
+                    </div>
+                    <div class="col col-lg-3">
+                        <label>Email/Phone</label><br />
+                        <asp:TextBox runat="server" CssClass="form-control form-control-lg txtb" />
+                    </div>
+
+                  
+
+                     <div class="col col-lg-2 offset-1 align-text-bottom">
+                            <label> </label><br />
+                          <div class="input-group input-group-lg">
+
+                              <asp:HyperLink id="HyperLink1" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm"></asp:HyperLink>  
+                             
+                            </div>
+                        </div>
+
+
                 </div>
-                <div class="col col-2">
-                    <label>Email/Phone</label><br />
-                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                </div>
-                <div class="col col-2">
-                    <label>Обращение</label><br />
-                    <asp:TextBox runat="server" CssClass="form-control-lg txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                </div>
-                <div class="col col-2">
-                    <div class="mt-5">
-                        <asp:Button Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" runat="server" />
+                <div class="row mt-2 justify-content-md-center ">
+                    <div class="col-lg-9">
+                        <label>Обращение</label><br />
+                        <asp:TextBox runat="server" CssClass="form-control form-control-lg" TextMode="MultiLine"  />
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 

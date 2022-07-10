@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="hotelnikol.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SitePages.Master.cs" Inherits="hotelnikol.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-
+    <link href="Content/bootstrap5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/SitePages.css" rel="stylesheet" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -75,7 +75,7 @@
 
 
 
-            <div class="banner_nicol">
+            <div class="banner_nicol_pages">
                 
 
 
@@ -99,7 +99,7 @@
                                         <a class="nav-link" href="#portfolio">Цены</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="services.aspx">Услуги</a>
+                                        <a class="nav-link" href="services.aspx" h>Услуги</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#portfolio">Номера</a>
@@ -120,7 +120,7 @@
 
         </header>
         <div class="body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <asp:ContentPlaceHolder ID="MainContentPages" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
