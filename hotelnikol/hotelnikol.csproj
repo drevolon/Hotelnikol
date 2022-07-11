@@ -50,10 +50,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -106,6 +106,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\SitePages.css" />
+    <Content Include="roomStandart.aspx" />
+    <Content Include="roomEconom.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="About.aspx" />
     <Content Include="booking.aspx" />
@@ -2351,6 +2353,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="roomStandart.aspx.cs">
+      <DependentUpon>roomStandart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roomStandart.aspx.designer.cs">
+      <DependentUpon>roomStandart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="roomEconom.aspx.cs">
+      <DependentUpon>roomEconom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roomEconom.aspx.designer.cs">
+      <DependentUpon>roomEconom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -15,21 +15,66 @@ namespace hotelnikol
     {
 
         /// <summary>
-        /// HyperLinkSendData элемент управления.
+        /// StartBooking элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически созданное поле.
+        /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLinkSendData;
+        protected global::System.Web.UI.WebControls.TextBox StartBooking;
 
         /// <summary>
-        /// HyperLink1 элемент управления.
+        /// EndBooking элемент управления.
         /// </summary>
         /// <remarks>
-        /// Автоматически созданное поле.
+        /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.TextBox EndBooking;
+
+        /// <summary>
+        /// HyperLink2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button HyperLink2;
+
+        /// <summary>
+        /// Sender элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Sender;
+
+        /// <summary>
+        /// Contact элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Contact;
+
+        /// <summary>
+        /// BackContact элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BackContact;
+
+        /// <summary>
+        /// Message элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Message;
     }
 }

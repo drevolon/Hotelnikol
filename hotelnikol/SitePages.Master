@@ -93,10 +93,10 @@
                                 <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="default.aspx" >Об отеле</a>
+                                        <a class="nav-link" href="#present">Об отеле</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#portfolio">Цены</a>
+                                        <a class="nav-link" href="Default.aspx#portfolio">Цены</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="services.aspx" h>Услуги</a>
@@ -105,7 +105,7 @@
                                         <a class="nav-link" href="#portfolio">Номера</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#my_job">Наши клиенты</a>
+                                        <a class="nav-link" href="Default.aspx#my_job">Наши клиенты</a>
                                     </li>
                                 </ul>
 

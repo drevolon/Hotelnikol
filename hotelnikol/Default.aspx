@@ -6,10 +6,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<link href="Content/Site.css" rel="stylesheet" />
-     <!-- TEMP Bootstrap CSS -->
+    <link href="Content/Site.css" rel="stylesheet" />
+    <!-- TEMP Bootstrap CSS -->
     <link href="Content/bootstrap5/css/bootstrap.min.css" rel="stylesheet" />
- 
+
 
     <link href="../PickMeUp-master/css/pickmeup.css" rel="stylesheet" />
     <script type="text/javascript">
@@ -27,8 +27,28 @@
             $('.date').pickmeup_twitter_bootstrap({ format: 'd.m.Y', default_date: false });
         });
     </script>
-    	
-   
+    <script>
+        function ConvertFormatDate(st) {
+            var dt = st.split('.');
+            return dt[2] + '-' + dt[1] + '-' + dt[0];
+        }
+        function getNumberOfDays(start, end) {
+            const date1 = new Date(start);
+            const date2 = new Date(end);
+            // One day in milliseconds 
+            const oneDay = 1000 * 60 * 60 * 24;
+            // Calculating the time difference between two dates 
+            const diffInTime = date2.getTime() - date1.getTime();
+            // Calculating the no. of days between two dates 
+            const diffInDays = Math.round(diffInTime / oneDay);
+            return diffInDays;
+        }
+        function SelectDateBooking() {
+            var d1 = ConvertFormatDate(document.getElementById("StartBooking").value);
+            var d2 = ConvertFormatDate(document.getElementById("EndBooking").value);
+            window.open('booking/?date=' + d1 + '&nights=' + getNumberOfDays(d1, d2) + '&adults=1')
+        }
+    </script>
 
     <section class="present">
 
@@ -52,7 +72,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="slider col-12">
-               
+
                     <%--<img src="Images/Slider/slider0.jpg" class="img-responsive" />--%>
                     <%--<img src="Images/Slider/Banner/banner2.jpg" class="img-responsive"  />--%>
 
@@ -94,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                         
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#sliderBanner" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,7 +153,7 @@
                 </div>
             </div>
         </div>
-    <!-- end TL search form 2.0 -->
+        <!-- end TL search form 2.0 -->
 
     </section>
 
@@ -146,43 +166,45 @@
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
-                
-                    
-                        <div class="col col-lg-3">
-                            <label>Заезд</label><br />
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-text">
-                                    <span class="fa fa-calendar-days icon" id="icon1"></span>
-                                </div>
-                                <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                            </div>
-                        </div>
-                        <div class="col col-lg-3">
-                            <label>Выезд</label><br />
-                            <div class="input-group input-group-lg">
-                                <div class="input-group-text">
-                                    <span class="fa fa-calendar-days icon" id="icon2"></span>
-                                </div>
-                                <asp:TextBox runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                            </div>
-                        </div>
 
-                        <div class="col col-lg-2 align-text-bottom">
-                            <label> </label><br />
-                          <div class="input-group input-group-lg">
 
-                              <asp:HyperLink id="HyperLinkSendData" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm"></asp:HyperLink>  
-                             
-                            </div>
+                <div class="col col-lg-3">
+                    <label>Заезд</label><br />
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-text">
+                            <span class="fa fa-calendar-days icon" id="icon1"></span>
                         </div>
-                   
-                
+                        <asp:TextBox ID="StartBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                    </div>
+                </div>
+                <div class="col col-lg-3">
+                    <label>Выезд</label><br />
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-text">
+                            <span class="fa fa-calendar-days icon" id="icon2"></span>
+                        </div>
+                        <asp:TextBox ID="EndBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                    </div>
+                </div>
+
+                <div class="col col-lg-2 align-text-bottom">
+                    <label></label>
+                    <br />
+                    <div class="input-group input-group-lg">
+
+                        <%--                              <asp:HyperLink id="HyperLinkSendData" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm" oncli style="left: 1px; bottom: 1px; margin-top: 0px" ></asp:HyperLink>  --%>
+                        <asp:Button ID="HyperLink2" runat="server" Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" OnClientClick="SelectDateBooking()" Style="left: 1px; bottom: 1px; margin-top: 0px"></asp:Button>
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
-    
 
-     <section class="our_rooms">
+
+    <section class="our_rooms">
         <div class="container-fluid">
             <div class="row mt-my1">
                 <div class="col-12 text-center">
@@ -190,57 +212,55 @@
                 </div>
             </div>
             <div class="container-fluid">
-            <div class="row text-center items">
-                
-                <div class="col col-lg-3 d-flex justify-content-center">
-                    <div class="card">
-                        <a href="#">
-                            <img src="Images/our_room_img1.png" class="card-img-top" alt="..." /></a>
-                        <div class="card-body">
-                            <a class="card-link" href="#">Эконом</a>
+                <div class="row text-center items">
+
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                        <div class="card">
+                            <a href="roomEconom.aspx">
+                                <img src="Images/our_room_img1.png" class="card-img-top" alt="..." /></a>
+                            <div class="card-body">
+                                <a class="card-link" href="roomEconom.aspx">Эконом</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                        <div class="card">
+                            <a href="roomStandart">
+                                <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
+                            <div class="card-body">
+                                <a class="card-link" href="roomStandart">Стандарт</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                        <div class="card">
+                            <a href="roomLux">
+                                <img src="Images/our_room_img3.png" class="card-img-top" alt="..." /></a>
+                            <div class="card-body">
+                                <a class="card-link" href="roomLux">Люкс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 d-flex justify-content-center">
+                        <div class="card">
+                            <a href="roomPremium">
+                                <img src="Images/our_room_img4.png" class="card-img-top" alt="..." /></a>
+                            <div class="card-body">
+                                <a class="card-link" href="roomPremium">Премиум</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
-                         <div class="card">
-                            <a href="#">
-                            <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
-                            <div class="card-body">
-                                <a class="card-link" href="#">Стандарт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
-                         <div class="card">
-                            <a href="#">
-                            <img src="Images/our_room_img3.png" class="card-img-top" alt="..." /></a>
-                            <div class="card-body">
-                                <a class="card-link" href="#">Люкс</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
-                         <div class="card">
-                            <a href="#">
-                            <img src="Images/our_room_img4.png" class="card-img-top" alt="..." /></a>
-                            <div class="card-body">
-                                <a class="card-link" href="#">Премиум</a>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    
-                
-            </div></div>
+            </div>
         </div>
     </section>
 
-     <section class="services">
+    <section class="services">
         <div class="container-fluid">
             <div class="row">
                 <div class="services text-center" id="services_block">
                     <%--<img src="Images/temp/temp_services.jpg" />--%>
-                                        
+
                     <div class="row mt-my1">
                         <div class="col-12 text-center">
                             <h3>Услуги</h3>
@@ -254,17 +274,17 @@
                                 </div>
                                 <a href="#">
                                     <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." /></a>
-                              
+
                             </div>
                         </div>
-                         <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="col-lg-6 d-flex justify-content-center">
                             <div class="card var2">
                                 <div class="card-body">
                                     <a class="card-link" href="services.aspx">Совещения, встречи, презентации</a>
                                 </div>
                                 <a href="#">
                                     <img src="Images/imgServices2.png" class="card-img-bottom" alt="..." /></a>
-                              
+
                             </div>
                         </div>
                     </div>
@@ -364,58 +384,63 @@
                     </div>--%>
                 </div>
 
-                </div>
             </div>
-       
+        </div>
+
     </section>
 
     <section class="callback">
-        <div class="container-fluid">
-            <div class="row mt-my1">
-                <div class="col-12 text-center">
-                    <h3>Обратная связь</h3>
-                </div>
-            </div>
-            <div class="container items">
-                <div class="row justify-content-md-center ">
-                    <div class="col col-lg-3">
-                        <label>Имя</label><br />
-                        <asp:TextBox runat="server" CssClass="form-control form-control-lg txtb"  />
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <div class="container-fluid">
+                    <div class="row mt-my1">
+                        <div class="col-12 text-center">
+                            <h3>Обратная связь</h3>
+                        </div>
                     </div>
-                    <div class="col col-lg-3">
-                        <label>Email/Phone</label><br />
-                        <asp:TextBox runat="server" CssClass="form-control form-control-lg txtb" />
-                    </div>
+                    <div class="container items">
+                        <div class="row justify-content-md-center ">
+                            <div class="col col-lg-3">
+                                <label>Имя</label><br />
+                                <asp:TextBox id="Sender" runat="server" CssClass="form-control form-control-lg txtb" />
+                            </div>
+                            <div class="col col-lg-3">
+                                <label>Email/Phone</label><br />
+                                <asp:TextBox id="Contact" runat="server" CssClass="form-control form-control-lg txtb" />
+                            </div>
 
-                  
 
-                     <div class="col col-lg-2 offset-1 align-text-bottom">
-                            <label> </label><br />
-                          <div class="input-group input-group-lg">
 
-                              <asp:HyperLink id="HyperLink1" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm"></asp:HyperLink>  
-                             
+                            <div class="col col-lg-2 offset-1 align-text-bottom">
+                                <label></label>
+                                <br />
+                                <div class="input-group input-group-lg">
+
+                                    <asp:Button ID="BackContact" ClientIDMode="Static" runat="server" Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" OnClick="BackContact_Click" ></asp:Button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row mt-2 justify-content-md-center ">
+                            <div class="col-lg-9">
+                                <label>Обращение</label><br />
+                                <asp:TextBox id="Message" runat="server" CssClass="form-control form-control-lg" TextMode="MultiLine" />
                             </div>
                         </div>
-
-
-                </div>
-                <div class="row mt-2 justify-content-md-center ">
-                    <div class="col-lg-9">
-                        <label>Обращение</label><br />
-                        <asp:TextBox runat="server" CssClass="form-control form-control-lg" TextMode="MultiLine"  />
                     </div>
-                </div>
-            </div>
 
-        </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
     </section>
 
-     <section class="book_reviews">
+    <section class="book_reviews">
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center" id="block_book_reviews">
-                   <%-- <img src="Images/temp/temp_book_reviews.jpg" />--%>
+                    <%-- <img src="Images/temp/temp_book_reviews.jpg" />--%>
                     <div class="row mt-my1">
                         <div class="col-12 text-center">
                             <h3>Отзывы</h3>
@@ -428,47 +453,47 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews2.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews3.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                 <div class="row">
+                                <div class="row">
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews4.jpg" class="d-block w-100" alt="..." />
-                                        
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews5.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews6.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                  <div class="row">
+                                <div class="row">
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews7.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                     <div class="col-4">
                                         <img src="Images/Slider/Отзывы/book_reviews8.jpg" class="d-block w-100" alt="..." />
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -489,18 +514,18 @@
         </div>
     </section>
 
-     <section class="block8">
+    <section class="block8">
         <div class="container-fluid">
             <div class="row mt-my1">
-                        <div class="col-12 text-center mt-5 mb-5">
-                            <h3>Как нас найти</h3>
-                        </div>
-                    </div>
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h3>Как нас найти</h3>
+                </div>
+            </div>
             <div class="row">
                 <div class="block8 text-center" id="block8">
                     <%--<img src="Images/temp/temp_how_find_us.png" />--%>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -510,7 +535,7 @@
 
 
 
-   <%-- <section class="take_services1">
+    <%-- <section class="take_services1">
         <div class="container-fluid">
             <div class="row">
 
@@ -612,12 +637,10 @@
 
     <%--<uc1:QueryClients runat="server" id="QueryClients"  />--%>
 
-   
 
 
- <%--   <uc1:slider4 runat="server" id="slider4" />--%>
-    
 
+    <%--   <uc1:slider4 runat="server" id="slider4" />--%>
 </asp:Content>
 
 
