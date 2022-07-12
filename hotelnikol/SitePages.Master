@@ -123,7 +123,7 @@
             <asp:ContentPlaceHolder ID="MainContentPages" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
+            <footer_pages>
                 
                 <div class="container-fluid">
                     <div class="row">
@@ -141,7 +141,7 @@
                     <div class="uSocial-Share" data-pid="873d01af8672f9d3e341c31799c8455e" data-type="share" data-options="round-rect,style1,default,absolute,horizontal,size48,eachCounter0,counter0,upArrow-left,mobile_position_right" data-social="vk,ok,vi,wa,telegram,mail"></div>
                 </div>--%>
                 <!-- /uSocial -->
-            </footer>
+            </footer_pages>
         </div>
 
     </form>
