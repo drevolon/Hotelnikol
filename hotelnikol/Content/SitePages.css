@@ -41,11 +41,11 @@ body {
     font-family: Roboto-Regular,Arial,Verdana;
     
    
-   /* background-image: url('../images/backservices.png');
+    background-image: url('../images/backservices.png');
     
     background-repeat:no-repeat;
 
-    background-size:contain;
+    /*background-size:contain;
 
     background-position: center top;
     background-position: 0px 94px;*/
@@ -147,13 +147,8 @@ header {
     /*background-image: url('../images/backservices.png');*/
 }
 
-    .services_pages .items {
-        margin-top: 8px;
-    }
-
-    .services_pages .carousel {
-        margin-top: 20px;
-    }
+    
+    
 
     .services_pages .card {
         margin-top: 42px;
@@ -187,12 +182,7 @@ header {
         border-radius: 40px;
     }
 
-    .services_pages img {
-        width: 516px;
-        height: 290px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        
-    }
+    
 
     .services_pages .items .card .card-link {
         font-family: 'Roboto';
@@ -245,6 +235,18 @@ header {
             color: #D65479;
         }
 
+.carousel_pages
+{
+ margin-top: 25px;
+}
+    .carousel_pages .items {
+    }
+        .carousel_pages img {
+            width: 400px !important;
+            height: 280px;
+            filter: drop-shadow(15px 15px 4px rgba(0, 0, 0, 0.25));
+        }
+
 
 
 footer_pages {
@@ -257,7 +259,6 @@ footer_pages {
     background: #73707C;
     font-size: 24px;
     color: #F2EEE9;
-
 }
 
     footer_pages .social {
