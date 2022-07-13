@@ -58,15 +58,13 @@
                 Отель Николь
             </div>
             <div class="base_text">
-                Является современным отелем с числом
-                звезд три и располагается в тихом
-                живописном месте.<br />
+                Гостиница Николь расположена в тихом районе города Перми, в 6 км от ж/д вокзала и в 15 км от аэропорта.<br />
                 Отель располагает 30 номерами
                 повышенной комфортности.
             </div>
-            <div class="base_link">
+<%--            <div class="base_link">
                 ПОДРОБНЕЕ
-            </div>
+            </div>--%>
         </div>
 
         <div class="container-fluid">
@@ -216,37 +214,37 @@
 
                     <div class="col col-lg-3 d-flex justify-content-center">
                         <div class="card">
-                            <a href="roomEconom.aspx">
+                            <a href="EconomRoom.aspx">
                                 <img src="Images/our_room_img1.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <a class="card-link" href="roomEconom.aspx">Эконом</a>
+                                <a class="card-link" href="EconomRoom.aspx">Эконом</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-lg-3 d-flex justify-content-center">
                         <div class="card">
-                            <a href="roomStandart">
+                            <a href="StandartRoom.apsx">
                                 <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <a class="card-link" href="roomStandart">Стандарт</a>
+                                <a class="card-link" href="StandartRoom.aspx">Стандарт</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-lg-3 d-flex justify-content-center">
                         <div class="card">
-                            <a href="roomLux">
+                            <a href="LuxRoom.aspx">
                                 <img src="Images/our_room_img3.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <a class="card-link" href="roomLux">Люкс</a>
+                                <a class="card-link" href="LuxRoom.aspx">Люкс</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-lg-3 d-flex justify-content-center">
                         <div class="card">
-                            <a href="roomPremium">
+                            <a href="PremiumRoom.aspx">
                                 <img src="Images/our_room_img4.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
-                                <a class="card-link" href="roomPremium">Премиум</a>
+                                <a class="card-link" href="PremiumRoom.aspx">Премиум</a>
                             </div>
                         </div>
                     </div>
@@ -272,7 +270,7 @@
                                 <div class="card-body">
                                     <a class="card-link" href="services.aspx">Корпоративы,  свадьбы, вечеринки</a>
                                 </div>
-                                <a href="#">
+                                <a href="Services.aspx">
                                     <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." /></a>
 
                             </div>
@@ -280,108 +278,16 @@
                         <div class="col-lg-6 d-flex justify-content-center">
                             <div class="card var2">
                                 <div class="card-body">
-                                    <a class="card-link" href="services.aspx">Совещения, встречи, презентации</a>
+                                    <a class="card-link" href="Conference.aspx">Совещания, встречи, презентации</a>
                                 </div>
-                                <a href="#">
+                                <a href="Conference.aspx">
                                     <img src="Images/imgServices2.png" class="card-img-bottom" alt="..." /></a>
 
                             </div>
                         </div>
                     </div>
 
-                    <%--<div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service2.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="carousel-item" data-bs-interval="2000">
-                                 <div class="row">
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service2.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <img src="Images/Slider/service2.png" class="d-block w-100" alt="..." />
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>First slide label</h5>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>--%>
+          
                 </div>
 
             </div>

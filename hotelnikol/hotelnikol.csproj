@@ -105,9 +105,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PremiumRoom.aspx" />
+    <Content Include="LuxRoom.aspx" />
+    <Content Include="StandartRoom.aspx" />
+    <Content Include="EconomRoom.aspx" />
     <Content Include="Content\SitePages.css" />
-    <Content Include="roomStandart.aspx" />
-    <Content Include="roomEconom.aspx" />
+    <Content Include="Conference.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="About.aspx" />
     <Content Include="booking.aspx" />
@@ -2353,19 +2356,40 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="roomStandart.aspx.cs">
-      <DependentUpon>roomStandart.aspx</DependentUpon>
+    <Compile Include="PremiumRoom.aspx.cs">
+      <DependentUpon>PremiumRoom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="roomStandart.aspx.designer.cs">
-      <DependentUpon>roomStandart.aspx</DependentUpon>
+    <Compile Include="PremiumRoom.aspx.designer.cs">
+      <DependentUpon>PremiumRoom.aspx</DependentUpon>
     </Compile>
-    <Compile Include="roomEconom.aspx.cs">
-      <DependentUpon>roomEconom.aspx</DependentUpon>
+    <Compile Include="LuxRoom.aspx.cs">
+      <DependentUpon>LuxRoom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="roomEconom.aspx.designer.cs">
-      <DependentUpon>roomEconom.aspx</DependentUpon>
+    <Compile Include="LuxRoom.aspx.designer.cs">
+      <DependentUpon>LuxRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StandartRoom.aspx.cs">
+      <DependentUpon>StandartRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StandartRoom.aspx.designer.cs">
+      <DependentUpon>StandartRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EconomRoom.aspx.cs">
+      <DependentUpon>EconomRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EconomRoom.aspx.designer.cs">
+      <DependentUpon>EconomRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conference.aspx.cs">
+      <DependentUpon>Conference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conference.aspx.designer.cs">
+      <DependentUpon>Conference.aspx</DependentUpon>
     </Compile>
     <Compile Include="Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>
