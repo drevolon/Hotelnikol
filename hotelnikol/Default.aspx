@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="hotelnikol._Default" %>
+﻿<%@ Page Title="Отель Николь" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="hotelnikol._Default" %>
 
 
 
@@ -52,12 +52,12 @@
 
     <section class="present">
 
-        <div class="present_block">
+        <div class="present_block d-none d-sm-block"> 
             <%--<img src="Images/temp/banner_about_hotel.png" />--%>
             <div class="header">
                 Отель Николь
             </div>
-            <div class="base_text">
+            <div class="base_text d-none d-sm-block">
                 Гостиница Николь расположена в тихом районе города Перми, в 6 км от ж/д вокзала и в 15 км от аэропорта.<br />
                 Отель располагает 30 номерами
                 повышенной комфортности.
@@ -132,28 +132,7 @@
         </div>
     </section>
 
-    <section class="block2">
-        <div class="container-fluid">
-            <div class="row justify-content-center text-center">
-                <div class="col-12">
-                    <!-- start TL search form 2.0 -->
-                    <%--<div id="tl-search-form"></div>
-                    <script type="text/javascript">
-                        (function (w) {
-                            var q = [
-                                ['setContext', 'TL-INT-hotelnikol', 'ru'],
-                                ['embed', 'search-form', { container: 'tl-search-form' }]
-                            ];
-                            var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {}); ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
-                            if (!ti.__loader) { ti.__loader = true; var d = w.document, p = d.location.protocol, s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js'; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); }
-                        })(window);
-                    </script>--%>
-                </div>
-            </div>
-        </div>
-        <!-- end TL search form 2.0 -->
-
-    </section>
+ 
 
 
     <section class="schedule_event">
@@ -166,7 +145,7 @@
             <div class="row mt-3 justify-content-md-center">
 
 
-                <div class="col col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
                     <label>Заезд</label><br />
                     <div class="input-group input-group-lg">
                         <div class="input-group-text">
@@ -175,7 +154,7 @@
                         <asp:TextBox ID="StartBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
                     </div>
                 </div>
-                <div class="col col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
                     <label>Выезд</label><br />
                     <div class="input-group input-group-lg">
                         <div class="input-group-text">
@@ -185,12 +164,11 @@
                     </div>
                 </div>
 
-                <div class="col col-lg-2 align-text-bottom">
+                <div class="col-12 col-sm-2 col-lg-2 col-xl-2 align-text-bottom">
                     <label></label>
                     <br />
                     <div class="input-group input-group-lg">
 
-                        <%--                              <asp:HyperLink id="HyperLinkSendData" runat="server" Text="Отправить" NavigateUrl="#" CssClass="btn btn-secondary btn-lg btnm" oncli style="left: 1px; bottom: 1px; margin-top: 0px" ></asp:HyperLink>  --%>
                         <asp:Button ID="HyperLink2" runat="server" Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" OnClientClick="SelectDateBooking()" Style="left: 1px; bottom: 1px; margin-top: 0px"></asp:Button>
 
                     </div>
@@ -205,14 +183,14 @@
     <section class="our_rooms">
         <div class="container-fluid">
             <div class="row mt-my1">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" name="our_rooms">
                     <h3>Наши номера</h3>
                 </div>
             </div>
             <div class="container-fluid">
                 <div class="row text-center items">
 
-                    <div class="col col-lg-3 d-flex justify-content-center">
+                    <div class="col col-lg-6 col-xl-3 d-flex justify-content-center">
                         <div class="card">
                             <a href="EconomRoom.aspx">
                                 <img src="Images/our_room_img1.png" class="card-img-top" alt="..." /></a>
@@ -221,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
+                    <div class="col col-lg-6 col-xl-3 d-flex justify-content-center">
                         <div class="card">
                             <a href="StandartRoom.apsx">
                                 <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
@@ -230,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
+                    <div class="col col-lg-6 col-xl-3 d-flex justify-content-center">
                         <div class="card">
                             <a href="LuxRoom.aspx">
                                 <img src="Images/our_room_img3.png" class="card-img-top" alt="..." /></a>
@@ -239,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col col-lg-3 d-flex justify-content-center">
+                    <div class="col col-lg-6 col-xl-3 d-flex justify-content-center">
                         <div class="card">
                             <a href="PremiumRoom.aspx">
                                 <img src="Images/our_room_img4.png" class="card-img-top" alt="..." /></a>
@@ -342,7 +320,7 @@
         </asp:UpdatePanel>
     </section>
 
-    <section class="book_reviews">
+    <section class="book_reviews" name="book_reviews">
         <div class="container-fluid">
             <div class="row">
                 <div class="text-center" id="block_book_reviews">
@@ -357,15 +335,15 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews2.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews3.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
@@ -373,15 +351,15 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews4.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews5.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews6.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
@@ -389,15 +367,15 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews7.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews.jpg" class="d-block w-100" alt="..." />
 
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-12 col-sm-4">
                                         <img src="Images/Slider/Отзывы/book_reviews8.jpg" class="d-block w-100" alt="..." />
 
                                     </div>

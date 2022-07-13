@@ -132,7 +132,7 @@ header {
         position: absolute;
         width: 651px;
         height: 335px;
-        left: 1104px;
+        right: 165px;
         top: 274px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background: rgba(242, 238, 233, 0.8);
@@ -146,7 +146,7 @@ header {
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
-            line-height: 47px;
+           
             color: #4F4F4F;
         }
 
@@ -218,7 +218,7 @@ header {
         }
 
             .our_rooms .items .card img {
-                width: 406px;
+                width: 100%;
                 height: 281px;
                 border-radius: 20px;
             }
@@ -303,8 +303,10 @@ header {
 .services {
     margin-top: 50px;
     width: 100%;
-    height: 681px;
+    
+    padding-bottom:60px;
     background-image: url('../images/backservices.png');
+    background-clip:content-box;
 }
 
     .services h3 {
@@ -356,11 +358,11 @@ header {
 .schedule_event {
     position: absolute;
     width: 1590px;
-    height: 250px;
     left: 165px;
     top: 679px;
     z-index: 1001;
     background: rgba(115, 112, 124, 0.9);
+    padding: 0px 40px 66px 40px;
 }
 
     .schedule_event .txtb {
@@ -392,7 +394,7 @@ header {
         font-weight: 500;
         font-size: 24px;
         color: #FFFFFF;
-        bottom: -5px;
+        bottom: -7px !important;
     }
 
     .schedule_event label {
@@ -443,7 +445,7 @@ header {
     }
 
     .book_reviews img {
-        height: 491px;
+       height: 491px;
     }
 
 
@@ -466,14 +468,149 @@ footer {
     z-index: 1002;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1800px) {
+    .schedule_event {
+        position: inherit;
+        width: 100%;
+        left: 165px;
+        top: 679px;
+        z-index: 1001;
+        background: rgba(115, 112, 124, 0.9);
+        padding: 0px 40px 66px 40px;
+    }
 }
 
-@media only screen and (max-width: 1200px) {
-}
+    @media only screen and (max-width: 1400px) {
+        .present .present_block {
+            position: absolute;
+            width: 505px;
+            height: 249px;
+            right: 60px;
+            top: 277px;
+            border-radius: 42px;
+            padding: 24px;
+        }
 
-@media only screen and (max-width: 900px) {
-}
-/*Small*/
-@media only screen and (max-width: 767px) {
-}
+            .present .present_block .header {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                color: #4F4F4F;
+            }
+
+            .present .present_block .base_text {
+                margin-top: 10px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #4F4F4F;
+                width: 469px;
+            }
+
+        .book_reviews img {
+            height: 340px;
+        }
+
+        
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .present .present_block {
+            position: absolute;
+            width: 491px;
+            height: 244px;
+            right: 60px;
+            top: 240px;
+            border-radius: 42px;
+            padding: 20px;
+        }
+
+            .present .present_block .header {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                color: #4F4F4F;
+            }
+
+            .present .present_block .base_text {
+                margin-top: 10px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #4F4F4F;
+                width: 469px;
+            }
+
+        .book_reviews img {
+            height: 340px;
+        }
+    }
+
+    @media only screen and (max-width: 1085px) {
+        .present .present_block {
+            position: absolute;
+            width: 497px;
+            height: 239px;
+            right: 46px;
+            top: 187px;
+            border-radius: 42px;
+            padding: 20px;
+        }
+
+            .present .present_block .header {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                color: #4F4F4F;
+            }
+
+            .present .present_block .base_text {
+                margin-top: 10px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #4F4F4F;
+                width: 469px;
+            }
+
+        .book_reviews img {
+            height: 300px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .present .present_block {
+            display: none !important;
+        }
+
+        .book_reviews img {
+            height: 250px;
+        }
+
+        .schedule_event {
+           
+            padding: 0px 39px 43px 10px;
+        }
+
+    }
+
+
+    /*Small*/
+    @media only screen and (max-width: 767px) {
+        .present .present_block {
+            display: none !important;
+        }
+
+        
+    }
+
+

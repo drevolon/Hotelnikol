@@ -102,10 +102,10 @@
                                         <a class="nav-link" href="services.aspx">Услуги</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#portfolio">Номера</a>
+                                        <a class="nav-link" href="#our_rooms">Номера</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#my_job">Наши клиенты</a>
+                                        <a class="nav-link" href="#book_reviews">Наши клиенты</a>
                                     </li>
                                 </ul>
 

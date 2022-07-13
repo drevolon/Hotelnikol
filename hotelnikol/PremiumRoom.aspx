@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Services" Language="C#" MasterPageFile="~/SitePages.Master" AutoEventWireup="true" CodeBehind="PremiumRoom.aspx.cs" Inherits="hotelnikol.PremiumRoom" %>
+﻿<%@ Page Title="Отель Николь. Номер Премиум" Language="C#" MasterPageFile="~/SitePages.Master" AutoEventWireup="true" CodeBehind="PremiumRoom.aspx.cs" Inherits="hotelnikol.PremiumRoom" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContentPages" runat="server">
     <section class="services_pages">
