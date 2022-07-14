@@ -16,12 +16,12 @@
 
                         <div class="row text-center">
                             <div class="col-12">
-                                <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." />
+                                <img src="Images/imgServices1.png" class="card-img-bottom img-responsive" alt="..." />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-1">
+                <div class="col-12 col-lg-5 offset-0 offset-sm-0 offset-md-0 offset-lg-1">
                     <div class="card">
                         <div class="card-body services_body_text">
                             На 1 этаже отеля расположен ресторан. 
@@ -60,21 +60,21 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                          <div class="row">
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service1.png">
                                                     <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service2.png">
                                                     <img src="Images/Slider/service2.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service3.png">
                                                     <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
@@ -85,21 +85,21 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service3.png">
                                                     <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service1.png">
                                                     <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service2.png">
                                                     <img src="Images/Slider/service2.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
@@ -110,21 +110,21 @@
                                     </div>
                                    <div class="carousel-item">
                                         <div class="row">
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service3.png">
                                                     <img src="Images/Slider/service3.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service1.png">
                                                     <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="col-4 col-lg-4">
+                                            <div class="col-12 col-sm-4">
                                                 <a href="Images/Slider/service2.png">
                                                     <img src="Images/Slider/service1.png" class="d-block w-100" alt="..." />
                                                     <div class="carousel-caption d-none d-md-block">

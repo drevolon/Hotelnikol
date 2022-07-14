@@ -270,14 +270,177 @@ footer_pages {
     z-index: 1002;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1800px) {
+
+    .services_pages .vertical_col {
+        box-sizing: border-box;
+        position: inherit;
+        width: 664px;
+        height: 100%;
+        left: 260px;
+        top: 0px;
+        background: #F2EEE9;
+        border: 3px solid #D3D1E4;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+        .services_pages .vertical_col h3 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 32px !important;
+            align-items: center;
+            text-align: center;
+            color: #D65479;
+        }
+
+    .services_pages .card {
+        margin-top: 42px;
+        width: 565px;
+        padding: 10px;
+        border-radius: 40px;
+    }
 }
+
+
+@media only screen and (max-width: 1400px) {
+
+    .services_pages .vertical_col {
+        box-sizing: border-box;
+        position:inherit;
+        width: 558px;
+        height: 100%;
+        left: 260px;
+        top: 0px;
+        background: #F2EEE9;
+        border: 3px solid #D3D1E4;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+        .services_pages .vertical_col h3 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 32px !important;
+            align-items: center;
+            text-align: center;
+            color: #D65479;
+        }
+
+    .services_pages .card {
+        margin-top: 42px;
+        width: 565px;
+        padding: 10px;
+        border-radius: 40px;
+    }
+}
+
+
 
 @media only screen and (max-width: 1200px) {
+    .services_pages .vertical_col {
+        box-sizing: border-box;
+        position: inherit;
+        width: 470px;
+        height: 100%;
+        left: 260px;
+        top: 0px;
+        background: #F2EEE9;
+        border: 3px solid #D3D1E4;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+        .services_pages .vertical_col img {
+            margin-top: 35px;
+            width: 100%;
+            height: 300px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        .services_pages .vertical_col h3 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 32px !important;
+            align-items: center;
+            text-align: center;
+            color: #D65479;
+        }
+
+    .services_pages .card {
+        margin-top: 42px;
+        width: 450px;
+        padding: 10px;
+        border-radius: 40px;
+    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
+    .services_pages .vertical_col {
+        box-sizing: border-box;
+        position: inherit;
+        width: 460px;
+        height: 100%;
+        left: 260px;
+        top: 0px;
+        background: #F2EEE9;
+        border: 3px solid #D3D1E4;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+
+        .services_pages .vertical_col h3 {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 32px !important;
+            align-items: center;
+            text-align: center;
+            color: #D65479;
+        }
+
+    .services_pages .card {
+        margin-top: 42px;
+        width: 497px;
+        padding: 10px;
+        border-radius: 40px;
+    }
+
+    .services_pages .vertical_col img {
+        margin-top: 35px;
+        width: 100%;
+        height:300px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 }
 /*Small*/
 @media only screen and (max-width: 767px) {
+    .services_pages .vertical_col {
+        
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background: #F2EEE9;
+        border: 3px solid #D3D1E4;
+        box-shadow: 0px 0px 40px rgb(0 0 0 / 25%);
+        z-index: -1;
+    }
+
+        .services_pages .vertical_col img {
+            margin-top: 35px;
+            width: 100%;
+            height: 245px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+    .services_pages .card {
+        margin-top: 5px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+
+    .carousel_pages {
+        margin-top: 25px;
+        margin-bottom: 77px;
+    }
 }
