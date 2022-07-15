@@ -235,6 +235,23 @@ header {
             color: #D65479;
         }
 
+    .services_pages .btnm {
+        width: 386px;
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
+        background: #D65479;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px !important;
+        /***/
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+        bottom: -7px !important;
+    }
+
 .carousel_pages
 {
  margin-top: 25px;
@@ -250,11 +267,11 @@ header {
 
 
 .footer_pages {
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
-    left: 0px;
-    bottom: 0px !important;
-    margin-top: 80px;
+    /*left: 0px;*/
+    /*bottom: 0px !important;*/
+    /*margin-top: 80px;*/
     padding: 20px 0px;
     background: #73707C;
     font-size: 24px;

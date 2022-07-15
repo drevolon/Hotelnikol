@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-1">
+                <div class="col-lg-5 offset-0 offset-sm-0 offset-md-0 offset-lg-1">
                     <div class="card">
                         <div class="card-body services_body_text">
                             <b>В номере</b><br />
@@ -70,21 +70,21 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 1.jpg">
                                             <img src="Images/Slider/люкс 1.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 3.jpg">
                                             <img src="Images/Slider/люкс 3.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 2.jpg">
                                             <img src="Images/Slider/люкс 2.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
@@ -95,21 +95,21 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 2.jpg">
                                             <img src="Images/Slider/люкс 2.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 1.jpg">
                                             <img src="Images/Slider/люкс 1.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 3.jpg">
                                             <img src="Images/Slider/люкс 3.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
@@ -120,21 +120,21 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 3.jpg">
                                             <img src="Images/Slider/люкс 3.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 2.jpg">
                                             <img src="Images/Slider/люкс 2.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col-4 col-lg-4">
+                                    <div class="col-12 col-sm-4">
                                         <a href="Images/Slider/люкс 1.jpg">
                                             <img src="Images/Slider/люкс 1.jpg" class="d-block w-100" alt="..." />
                                             <div class="carousel-caption d-none d-md-block">
