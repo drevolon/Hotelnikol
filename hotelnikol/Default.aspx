@@ -54,7 +54,7 @@
 
         <div class="present_block d-none d-sm-block"> 
             <%--<img src="Images/temp/banner_about_hotel.png" />--%>
-            <div class="header">
+            <div class="header" name="present_links" id="present_links">
                 Отель Николь
             </div>
             <div class="base_text d-none d-sm-block">
@@ -183,7 +183,7 @@
     <section class="our_rooms">
         <div class="container-fluid">
             <div class="row mt-my1">
-                <div class="col-12 text-center" name="our_rooms">
+                <div class="col-12 text-center" name="our_rooms_links" id="our_rooms_links">
                     <h3>Наши номера</h3>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                     <%--<img src="Images/temp/temp_services.jpg" />--%>
 
                     <div class="row mt-my1">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center" name="services_links" id="services_links">
                             <h3>Услуги</h3>
                         </div>
                     </div>
@@ -326,7 +326,7 @@
                 <div class="text-center" id="block_book_reviews">
                     <%-- <img src="Images/temp/temp_book_reviews.jpg" />--%>
                     <div class="row mt-my1">
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center" id="book_reviews_links"  name="book_reviews_links">
                             <h3>Отзывы</h3>
                         </div>
                     </div>
@@ -398,15 +398,15 @@
         </div>
     </section>
 
-    <section class="block8">
+    <section class="maps_hotel">
         <div class="container-fluid">
             <div class="row mt-my1">
-                <div class="col-12 text-center mt-5 mb-5">
+                <div class="col-12 text-center mt-5 mb-5" name="maps_hotel_links" id="maps_hotel_links">
                     <h3>Как нас найти</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="block8 text-center" id="block8">
+                <div class="maps_hotel text-center" id="maps_hotel_maps">
                     <%--<img src="Images/temp/temp_how_find_us.png" />--%>
 
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

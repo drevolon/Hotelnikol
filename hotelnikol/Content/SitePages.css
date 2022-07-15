@@ -249,7 +249,7 @@ header {
 
 
 
-footer_pages {
+.footer_pages {
     position: absolute;
     width: 100%;
     left: 0px;
@@ -261,7 +261,7 @@ footer_pages {
     color: #F2EEE9;
 }
 
-    footer_pages .social {
+    .footer_pages .social {
         float: right;
     }
 
