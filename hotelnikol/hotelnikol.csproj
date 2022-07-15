@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\roslyn\csc.exe" />
     <Content Include="PremiumRoom.aspx" />
     <Content Include="LuxRoom.aspx" />
     <Content Include="StandartRoom.aspx" />
