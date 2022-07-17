@@ -22,7 +22,7 @@ namespace hotelnikol
             {
                 MailMessage mailMessage = new MailMessage();
                 mailMessage.From = new MailAddress("press@HOTELNIKOL.RU");
-                mailMessage.To.Add(new MailAddress("kigl@yandex.ru"));
+                mailMessage.To.Add(new MailAddress("hotelnikol@mail.ru"));
                 mailMessage.Subject = "Сообщение с сайта hotelnikol.ru";
                 mailMessage.IsBodyHtml = true;
                 mailMessage.Body = @"Отправитель: " + Sender.Text + @"
