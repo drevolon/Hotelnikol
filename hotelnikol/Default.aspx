@@ -59,7 +59,7 @@
             </div>
             <div class="base_text d-none d-sm-block">
                 Гостиница Николь расположена в тихом районе города Перми, в 6 км от ж/д вокзала и в 15 км от аэропорта.<br />
-                Отель располагает 30 номерами
+                Отель располагает 20 номерами
                 повышенной комфортности.
             </div>
 <%--            <div class="base_link">
@@ -327,7 +327,7 @@
                     <%-- <img src="Images/temp/temp_book_reviews.jpg" />--%>
                     <div class="row mt-my1">
                         <div class="col-12 text-center" id="book_reviews_links"  name="book_reviews_links">
-                            <h3>Отзывы</h3>
+                            <h3>Наши клиенты</h3>
                         </div>
                     </div>
 
