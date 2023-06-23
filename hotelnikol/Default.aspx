@@ -49,6 +49,7 @@
             window.open('booking/?date=' + d1 + '&nights=' + getNumberOfDays(d1, d2) + '&adults=1')
         }
     </script>
+<script type="text/javascript"> (function(k,o,t,e,l){ l = document.createElement("script"); l.type = "text/javascript"; l.src = "https://bookonline24.ru/widget.js"; l.async = !0; l.onload = l.onreadystatechange = function() { e = this.readyState; !o && (!e || e === "complete") && (o = 1) && k(); }; t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(l, t); })(function(){ HotelWidget.init({ id: "62eb0fb0-b96e-4685-8d01-a9770556e502", type: "horizontalBlock", form: { container: "WidgetId", } }, "https://bookonline24.ru/"); }); </script>
 
     <section class="present">
 
@@ -134,9 +135,9 @@
 
  
 
-
     <section class="schedule_event">
-        <div class="container-fluid">
+	<div id="WidgetId"></div>
+    <!--    <div class="container-fluid">
             <div class="row mt-my1">
                 <div class="col-12 text-center">
                     <h3>Забронировать номер</h3>
@@ -176,7 +177,7 @@
 
 
             </div>
-        </div>
+        </div> -->
     </section>
 
 
@@ -201,7 +202,7 @@
                     </div>
                     <div class="col col-lg-6 col-xl-3 d-flex justify-content-center">
                         <div class="card">
-                            <a href="StandartRoom.apsx">
+                            <a href="StandartRoom.aspx">
                                 <img src="Images/our_room_img2.png" class="card-img-top" alt="..." /></a>
                             <div class="card-body">
                                 <a class="card-link" href="StandartRoom.aspx">Стандарт</a>
@@ -246,21 +247,19 @@
                         <div class="col-lg-6 d-flex justify-content-center">
                             <div class="card">
                                 <div class="card-body">
-                                    <a class="card-link" href="services.aspx">Корпоративы,  свадьбы, вечеринки</a>
+                                    <a class="card-link" href="Conference.aspx">Совещания, встречи, презентации</a>
                                 </div>
-                                <a href="Services.aspx">
-                                    <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." /></a>
-
+                                <a href="Conference.aspx">
+                                    <img src="Images/imgServices2.png" class="card-img-bottom" alt="..." /></a>
                             </div>
                         </div>
                         <div class="col-lg-6 d-flex justify-content-center">
                             <div class="card var2">
                                 <div class="card-body">
-                                    <a class="card-link" href="Conference.aspx">Совещания, встречи, презентации</a>
+                                    <a class="card-link" href="services.aspx">Корпоративы,  свадьбы, вечеринки</a>
                                 </div>
-                                <a href="Conference.aspx">
-                                    <img src="Images/imgServices2.png" class="card-img-bottom" alt="..." /></a>
-
+                                <a href="Services.aspx">
+                                    <img src="Images/imgServices1.png" class="card-img-bottom" alt="..." /></a>
                             </div>
                         </div>
                     </div>
