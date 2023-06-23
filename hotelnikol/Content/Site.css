@@ -359,10 +359,10 @@ header {
     position: absolute;
     width: 1590px;
     left: 165px;
-    top: 679px;
+    top: 810px;
     z-index: 1001;
     background: rgba(115, 112, 124, 0.9);
-    padding: 0px 40px 66px 40px;
+    padding: 20px 40px 20px 40px;
 }
 
     .schedule_event .txtb {
@@ -419,7 +419,9 @@ header {
 
 .maps_hotel {
     margin-top: 48px;
+    
 }
+    
 
     .maps_hotel h3 {
         margin-top: 33px;
@@ -476,7 +478,7 @@ footer {
         top: 679px;
         z-index: 1001;
         background: rgba(115, 112, 124, 0.9);
-        padding: 0px 40px 66px 40px;
+        padding: 20px 0px 20px 0px;
     }
 }
 
@@ -597,8 +599,7 @@ footer {
         }
 
         .schedule_event {
-           
-            padding: 0px 39px 43px 10px;
+            padding: 10px 0px 10px 0px;
         }
 
     }
@@ -609,7 +610,9 @@ footer {
         .present .present_block {
             display: none !important;
         }
-
+        .text-end {
+            width:164px;
+        }
         
     }
 

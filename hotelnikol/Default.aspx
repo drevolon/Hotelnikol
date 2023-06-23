@@ -408,7 +408,10 @@
                 <div class="maps_hotel text-center" id="maps_hotel_maps">
                     <%--<img src="Images/temp/temp_how_find_us.png" />--%>
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <%--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.615919065829!2d56.17628411632019!3d57.96046288120102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8bf468336c293%3A0x6805e909785cc8e8!2z0J3QuNC60J7Qu9GM!5e0!3m2!1sru!2sru!4v1657052555848!5m2!1sru!2sru" width="100%" height="650" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--%>
+
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/50/perm/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Пермь</a><a href="https://yandex.ru/maps/50/perm/house/ulitsa_arkhitektora_sviyazeva_25/YU8YdwBoTUQOQFttfXV3cX9kYQ==/?ll=56.178419%2C57.960375&utm_medium=mapframe&utm_source=maps&z=17.14" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Архитектора Свиязева, 25 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=56.178419%2C57.960375&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjA1NTI1OTQ5ElDQoNC-0YHRgdC40Y8sINCf0LXRgNC80YwsINGD0LvQuNGG0LAg0JDRgNGF0LjRgtC10LrRgtC-0YDQsCDQodCy0LjRj9C30LXQstCwLCAyNSIKDbO2YEIVbddnQg%2C%2C&z=17.14" width="100%" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
                 </div>
             </div>
         </div>
