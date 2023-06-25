@@ -123,8 +123,53 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
+                        <section class="schedule_event">
+                            <div id="WidgetId"></div>
+                            <!--    <div class="container-fluid">
+                        <div class="row mt-my1">
+                            <div class="col-12 text-center">
+                                <h3>Забронировать номер</h3>
+                            </div>
+                        </div>
+                        <div class="row mt-3 justify-content-md-center">
+
+
+                            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+                                <label>Заезд</label><br />
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-text">
+                                        <span class="fa fa-calendar-days icon" id="icon1"></span>
+                                    </div>
+                                    <asp:TextBox ID="StartBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+                                <label>Выезд</label><br />
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-text">
+                                        <span class="fa fa-calendar-days icon" id="icon2"></span>
+                                    </div>
+                                    <asp:TextBox ID="EndBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-2 col-lg-2 col-xl-2 align-text-bottom">
+                                <label></label>
+                                <br />
+                                <div class="input-group input-group-lg">
+
+                                    <asp:Button ID="HyperLink2" runat="server" Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" OnClientClick="SelectDateBooking()" Style="left: 1px; bottom: 1px; margin-top: 0px"></asp:Button>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div> -->
+                        </section>
                     </div>
 
+                    
 
                 </div>
                 <div class="col-12">
@@ -135,50 +180,7 @@
 
  
 
-    <section class="schedule_event">
-	<div id="WidgetId"></div>
-    <!--    <div class="container-fluid">
-            <div class="row mt-my1">
-                <div class="col-12 text-center">
-                    <h3>Забронировать номер</h3>
-                </div>
-            </div>
-            <div class="row mt-3 justify-content-md-center">
-
-
-                <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
-                    <label>Заезд</label><br />
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-text">
-                            <span class="fa fa-calendar-days icon" id="icon1"></span>
-                        </div>
-                        <asp:TextBox ID="StartBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                    </div>
-                </div>
-                <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
-                    <label>Выезд</label><br />
-                    <div class="input-group input-group-lg">
-                        <div class="input-group-text">
-                            <span class="fa fa-calendar-days icon" id="icon2"></span>
-                        </div>
-                        <asp:TextBox ID="EndBooking" ClientIDMode="Static" runat="server" CssClass="form-control date txtb" aria-label="Кол-во" aria-describedby="Кол-во" />
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-2 col-lg-2 col-xl-2 align-text-bottom">
-                    <label></label>
-                    <br />
-                    <div class="input-group input-group-lg">
-
-                        <asp:Button ID="HyperLink2" runat="server" Text="Отправить" CssClass="btn btn-secondary btn-lg btnm" OnClientClick="SelectDateBooking()" Style="left: 1px; bottom: 1px; margin-top: 0px"></asp:Button>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div> -->
-    </section>
+    
 
 
     <section class="our_rooms">

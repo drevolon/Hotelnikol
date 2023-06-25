@@ -176,6 +176,7 @@ header {
 
     .present .slider {
         z-index: 0;
+       
     }
 
     .present .present_header {
@@ -320,6 +321,7 @@ header {
 
     .services .carousel {
         margin-top: 48px;
+        position:relative;
     }
 
     .services .items .card {
@@ -357,8 +359,8 @@ header {
 
 .schedule_event {
     position: absolute;
-    width: 1590px;
-    left: 165px;
+    width: 100%;
+    left: 0px;
     bottom: 0px;
     z-index: 1001;
     background: rgba(115, 112, 124, 0.9);
@@ -474,8 +476,8 @@ footer {
     .schedule_event {
         position: inherit;
         width: 100%;
-        left: 165px;
-        top: 679px;
+        left: 0px;
+        bottom: 0px;
         z-index: 1001;
         background: rgba(115, 112, 124, 0.9);
         padding: 20px 0px 20px 0px;
